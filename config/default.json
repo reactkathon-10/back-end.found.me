@@ -1,0 +1,13 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "postgres": "postgres://postgres:@localhost:5432/backEnd.found.me",
+  "public": "../public/",
+  "auth": {
+    "idField": "id",
+    "token": {
+      "secret": "1J0i/2rIOL+pRX+HiyYeGKUtabx9QexJWKV//EevjWaez6rAAcpm1+OGhoETqM0zyGvzv4VZO38NvxT8fBs+mQ=="
+    },
+    "local": {}
+  }
+}
