@@ -1,7 +1,10 @@
 {
   "host": "localhost",
   "port": 3030,
-  "postgres": "postgres://postgres:@localhost:5432/backEnd.found.me",
+  "postgres": "postgres://guvvwaqghghecs:e5698c6431f0e365d478a4f842442ca690c0e40f78ecf5bf9d8feeef82927c87@ec2-54-235-112-37.compute-1.amazonaws.com:5432/d9d46avi4u29o",
+  "connection_method": {
+    "ssl": true
+  },
   "public": "../public/",
   "auth": {
     "idField": "id",

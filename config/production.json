@@ -1,12 +1,12 @@
 {
   "host": "back-end.found.me-app.feathersjs.com",
-  "port": 80,
-  "postgres": "DATABASE_URL",
+  "port": 5432,
+  "postgres": "postgres://guvvwaqghghecs:e5698c6431f0e365d478a4f842442ca690c0e40f78ecf5bf9d8feeef82927c87@ec2-54-235-112-37.compute-1.amazonaws.com:5432/d9d46avi4u29o",
   "public": "../public/",
   "auth": {
     "idField": "id",
     "token": {
-      "secret": "FEATHERS_AUTH_SECRET"
+      "secret": "2J0i/2rIOL+pRX+HiyYeGKUtabx9QexJWKV//EevjWaez6rAAcpm1+OGhoETqM0zyGvzv4VZO38NvxT8fBs+mQ=="
     },
     "local": {}
   }
