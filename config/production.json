@@ -1,12 +1,15 @@
 {
-  "host": "back-end.found.me-app.feathersjs.com",
-  "port": 5432,
+  "host": "back-end.found.me.com",
+  "port": "PORT",
   "postgres": "postgres://guvvwaqghghecs:e5698c6431f0e365d478a4f842442ca690c0e40f78ecf5bf9d8feeef82927c87@ec2-54-235-112-37.compute-1.amazonaws.com:5432/d9d46avi4u29o",
+  "connection_method": {
+    "ssl": true
+  },
   "public": "../public/",
   "auth": {
     "idField": "id",
     "token": {
-      "secret": "2J0i/2rIOL+pRX+HiyYeGKUtabx9QexJWKV//EevjWaez6rAAcpm1+OGhoETqM0zyGvzv4VZO38NvxT8fBs+mQ=="
+      "secret": "1J0i/2rIOL+pRX+HiyYeGKUtabx9QexJWKV//EevjWaez6rAAcpm1+OGhoETqM0zyGvzv4VZO38NvxT8fBs+mQ=="
     },
     "local": {}
   }
