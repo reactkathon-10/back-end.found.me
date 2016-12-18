@@ -3,22 +3,21 @@
 const globalHooks = require('../../../hooks');
 const hooks = require('feathers-hooks');
 const auth = require('feathers-authentication').hooks;
+const guid = require('../../../utils/string');
+
+const generateUUI = (hook) => {
+  hook.data.userCode = guid();
+
+  return hook;
+};
 
 exports.before = {
   all: [],
-  find: [
-    // auth.verifyToken(),
-    // auth.populateUser(),
-    // auth.restrictToAuthenticated()
-  ],
-  get: [
-    // auth.verifyToken(),
-    // auth.populateUser(),
-    // auth.restrictToAuthenticated(),
-    // auth.restrictToOwner({ ownerField: 'id' })
-  ],
+  find: [],
+  get: [],
   create: [
-    auth.hashPassword()
+    auth.hashPassword(),
+    generateUUI
   ],
   update: [
     auth.verifyToken(),
